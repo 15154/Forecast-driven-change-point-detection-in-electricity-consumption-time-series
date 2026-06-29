@@ -1,0 +1,42 @@
+{
+  "algorithm": "Window",
+  "cpd_params": {
+    "model": "rank",
+    "min_size": 28,
+    "jump": 1,
+    "pen": 10.0,
+    "width": 28
+  },
+  "original": {
+    "n_detected": 2,
+    "n_true": 4,
+    "tp": 1,
+    "tn": 360,
+    "fp": 1,
+    "fn": 3,
+    "tp_rate": 0.25,
+    "fp_rate": 0.002770083102493075,
+    "precision": 0.5,
+    "recall": 0.25,
+    "f1_score": 0.3333333333333333,
+    "gmean": 0.49930699897395464,
+    "covering": 0.3318609465700341,
+    "rand_index": 0.8041547493602288
+  },
+  "residuals": {
+    "n_detected": 2,
+    "n_true": 4,
+    "tp": 1,
+    "tn": 360,
+    "fp": 1,
+    "fn": 3,
+    "tp_rate": 0.25,
+    "fp_rate": 0.002770083102493075,
+    "precision": 0.5,
+    "recall": 0.25,
+    "f1_score": 0.3333333333333333,
+    "gmean": 0.49930699897395464,
+    "covering": 0.35384213959556426,
+    "rand_index": 0.8813337347583923
+  }
+}

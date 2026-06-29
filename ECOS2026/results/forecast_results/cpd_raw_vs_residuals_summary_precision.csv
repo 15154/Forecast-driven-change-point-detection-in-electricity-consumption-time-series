@@ -1,0 +1,15 @@
+scope,rank_by,rank_mode,n_total_combinations,n_valid_comparisons,n_missing,n_residual_better,n_raw_better,n_tie,residual_win_rate
+GLOBAL,precision,max,3276,3276,0,156,496,2624,0.047619047619047616
+CPD_ALGO::Binseg,precision,max,252,252,0,36,115,101,0.14285714285714285
+CPD_ALGO::BottomUp,precision,max,252,252,0,33,27,192,0.13095238095238096
+CPD_ALGO::CUSUM,precision,max,252,252,0,0,0,252,0.0
+CPD_ALGO::EWMA,precision,max,252,252,0,0,0,252,0.0
+CPD_ALGO::KernelCPD,precision,max,252,252,0,30,116,106,0.11904761904761904
+CPD_ALGO::Pelt,precision,max,252,252,0,38,110,104,0.15079365079365079
+CPD_ALGO::TwoSample,precision,max,252,252,0,0,0,252,0.0
+CPD_ALGO::Window,precision,max,252,252,0,19,128,105,0.07539682539682539
+CPD_ALGO::cpm1B,precision,max,252,252,0,0,0,252,0.0
+CPD_ALGO::cpm1S,precision,max,252,252,0,0,0,252,0.0
+CPD_ALGO::cpmMS,precision,max,252,252,0,0,0,252,0.0
+CPD_ALGO::sbs,precision,max,252,252,0,0,0,252,0.0
+CPD_ALGO::wbs,precision,max,252,252,0,0,0,252,0.0

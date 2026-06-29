@@ -1,0 +1,36 @@
+{
+  "best_params": {
+    "trend_order": 2,
+    "selected_lags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      21,
+      22
+    ],
+    "fourier_order": 2,
+    "use_weekly": false,
+    "hidden_layer_sizes": [
+      100,
+      100,
+      50,
+      100,
+      50,
+      25,
+      200,
+      100
+    ]
+  },
+  "metrics": {
+    "rmse": 362944083.40503216,
+    "mae": 285504101.86546767,
+    "mape": 0.04080710034369358
+  },
+  "algorithm": "MLP"
+}

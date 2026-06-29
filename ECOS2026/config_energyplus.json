@@ -1,0 +1,9 @@
+{
+    "data": {
+        "energyplus": {
+            "enabled": true,
+            "meter_dir": "../datasets/raw/EnergyPlus",
+            "epw_dir": "../datasets/raw/EnergyPlus"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "dataset": "LUCID_3",
+  "cpd_algo": "CUSUM",
+  "min_segment": 28,
+  "delta": 3,
+  "window_days": 28,
+  "forecast_algo": "KNN",
+  "best_combination": {
+    "trend_order": 2,
+    "selected_lags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      13,
+      14,
+      17,
+      18,
+      20,
+      22
+    ],
+    "fourier_order": 9,
+    "use_weekly": true,
+    "n_neighbors": 3
+  }
+}

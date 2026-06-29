@@ -1,0 +1,42 @@
+{
+  "algorithm": "Window",
+  "cpd_params": {
+    "model": "mahalanobis",
+    "min_size": 28,
+    "jump": 1,
+    "pen": 0.049999999999999996,
+    "width": 28
+  },
+  "original": {
+    "n_detected": 5,
+    "n_true": 3,
+    "tp": 2,
+    "tn": 359,
+    "fp": 3,
+    "fn": 1,
+    "tp_rate": 0.6666666666666666,
+    "fp_rate": 0.008287292817679558,
+    "precision": 0.4,
+    "recall": 0.6666666666666666,
+    "f1_score": 0.5,
+    "gmean": 0.8131062690621771,
+    "covering": 0.4108596386738138,
+    "rand_index": 0.7768327562848111
+  },
+  "residuals": {
+    "n_detected": 3,
+    "n_true": 3,
+    "tp": 0,
+    "tn": 359,
+    "fp": 3,
+    "fn": 3,
+    "tp_rate": 0,
+    "fp_rate": 0.008287292817679558,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "gmean": 0.0,
+    "covering": 0.3786243368651269,
+    "rand_index": 0.7659491193737769
+  }
+}

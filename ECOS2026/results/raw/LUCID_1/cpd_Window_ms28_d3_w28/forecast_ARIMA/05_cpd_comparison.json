@@ -1,0 +1,42 @@
+{
+  "algorithm": "Window",
+  "cpd_params": {
+    "model": "rbf",
+    "min_size": 28,
+    "jump": 1,
+    "pen": 0.049999999999999996,
+    "width": 28
+  },
+  "original": {
+    "n_detected": 6,
+    "n_true": 3,
+    "tp": 2,
+    "tn": 359,
+    "fp": 4,
+    "fn": 1,
+    "tp_rate": 0.6666666666666666,
+    "fp_rate": 0.011019283746556474,
+    "precision": 0.3333333333333333,
+    "recall": 0.6666666666666666,
+    "f1_score": 0.4444444444444444,
+    "gmean": 0.8119855155741976,
+    "covering": 0.5965205754432921,
+    "rand_index": 0.7742345983980837
+  },
+  "residuals": {
+    "n_detected": 1,
+    "n_true": 3,
+    "tp": 0,
+    "tn": 362,
+    "fp": 1,
+    "fn": 3,
+    "tp_rate": 0,
+    "fp_rate": 0.0027548209366391185,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "gmean": 0.0,
+    "covering": 0.007480578518829884,
+    "rand_index": 0.375402350475335
+  }
+}

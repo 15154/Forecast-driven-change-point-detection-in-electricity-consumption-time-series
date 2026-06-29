@@ -1,0 +1,131 @@
+% ============================================================
+%  TABLE 1 --- Covering  (EnergyPlus | LUCID)
+% ============================================================
+\begin{table*}[!ht]
+\centering
+\caption{Forecast-Driven vs.\ Raw CPD Matrix -- Covering}
+\label{tab:matrix-covering}
+\footnotesize
+\setlength{\tabcolsep}{1pt}
+\renewcommand{\arraystretch}{1}
+%
+\begin{minipage}[t]{0.48\linewidth}
+  \centering
+  \textbf{(a) EnergyPlus}\\[3pt]
+\begin{tabular}{|l|c|c|c|c|c|c|}
+  \hline
+   & Binseg & BU & Ker & PELT & Window & Total \\
+  \hline
+    ARIMA  & \cL 0/1/2  & \cL 1/0/2  & \cL 0/1/2  & \cL 0/0/3  & \cT 1/1/1  & \cL 2/3/10  \\
+    KNN  & \cW 2/0/1  & \cL 0/0/3  & \cW 2/0/1  & \cW 2/0/1  & \cW 2/0/1  & \cW 8/0/7  \\
+    KNN-MLP  & \cL 0/0/3  & \cL 1/0/2  & \cT 1/1/1  & \cL 0/1/2  & \cT 1/1/1  & \cL 3/3/9  \\
+    Lasso  & \cL 1/0/2  & \cW 2/0/1  & \cL 1/0/2  & \cL 1/0/2  & \cW 2/1/0  & \cT 7/1/7  \\
+    Lasso-MLP  & \cW 2/0/1  & \cL 1/0/2  & \cL 1/0/2  & \cW 2/0/1  & \cW 3/0/0  & \cW 9/0/6  \\
+    Lasso-XGB  & \cW 2/0/1  & \cL 1/0/2  & \cL 1/0/2  & \cW 2/0/1  & \cW 2/0/1  & \cW 8/0/7  \\
+    LR  & \cL 1/0/2  & \cW 2/0/1  & \cL 1/0/2  & \cL 1/0/2  & \cW 2/1/0  & \cT 7/1/7  \\
+    LR-XGB  & \cW 2/0/1  & \cL 1/0/2  & \cL 1/0/2  & \cW 2/0/1  & \cW 2/0/1  & \cW 8/0/7  \\
+    LSVR  & \cT 0/3/0  & \cT 0/3/0  & \cT 0/3/0  & \cT 0/3/0  & \cT 0/3/0  & \cT 0/15/0  \\
+    MLP  & \cL 0/2/1  & \cL 0/2/1  & \cL 0/2/1  & \cL 0/2/1  & \cL 0/2/1  & \cL 0/10/5  \\
+    SARIMAX  & \cL 0/1/2  & \cL 1/0/2  & \cL 0/1/2  & \cL 0/0/3  & \cT 1/1/1  & \cL 2/3/10  \\
+    SGD  & \cW 2/0/1  & \cL 0/0/3  & \cL 1/0/2  & \cW 2/0/1  & \cL 0/1/2  & \cL 5/1/9  \\
+    SVR  & \cW 2/0/1  & \cT 1/1/1  & \cL 0/1/2  & \cW 2/0/1  & \cW 1/2/0  & \cW 6/4/5  \\
+    XGB  & \cW 3/0/0  & \cL 0/0/3  & \cW 2/0/1  & \cW 3/0/0  & \cT 1/1/1  & \cW 9/1/5  \\
+  \hline
+    Total  & \cL 17/7/18  & \cL 11/6/25  & \cL 11/9/22  & \cL 17/6/19  & \cW 18/14/10  & \cL 74/42/94  \\
+  \hline
+  \end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\linewidth}
+  \centering
+  \textbf{(b) LUCID}\\[3pt]
+\begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  Binseg & BU & Ker & PELT & Window & Total \\
+  \hline
+    \cL 0/0/3  & \cT 0/3/0  & \cT 1/1/1  & \cT 1/1/1  & \cT 1/1/1  & \cL 3/6/6  \\
+    \cW 2/0/1  & \cT 0/3/0  & \cW 1/2/0  & \cL 0/2/1  & \cW 1/2/0  & \cW 4/9/2  \\
+    \cW 2/0/1  & \cT 0/3/0  & \cW 2/1/0  & \cT 1/1/1  & \cW 2/1/0  & \cW 7/6/2  \\
+    \cW 2/0/1  & \cW 1/2/0  & \cL 1/0/2  & \cW 2/0/1  & \cW 3/0/0  & \cW 9/2/4  \\
+    \cW 2/0/1  & \cT 0/3/0  & \cT 1/1/1  & \cW 2/0/1  & \cW 2/0/1  & \cW 7/4/4  \\
+    \cT 1/1/1  & \cT 0/3/0  & \cT 1/1/1  & \cW 2/1/0  & \cW 2/0/1  & \cW 6/6/3  \\
+    \cW 2/0/1  & \cW 2/1/0  & \cL 1/0/2  & \cW 3/0/0  & \cW 2/0/1  & \cW 10/1/4  \\
+    \cL 1/0/2  & \cW 1/2/0  & \cT 1/1/1  & \cW 2/0/1  & \cW 2/0/1  & \cW 7/3/5  \\
+    \cL 1/0/2  & \cT 0/3/0  & \cW 3/0/0  & \cW 2/0/1  & \cW 2/0/1  & \cW 8/3/4  \\
+    \cW 2/0/1  & \cT 0/3/0  & \cW 2/0/1  & \cW 2/0/1  & \cW 2/0/1  & \cW 8/3/4  \\
+    \cL 0/0/3  & \cT 0/3/0  & \cT 1/1/1  & \cT 1/1/1  & \cT 1/1/1  & \cL 3/6/6  \\
+    \cL 1/0/2  & \cW 1/2/0  & \cL 0/0/3  & \cW 2/0/1  & \cT 1/1/1  & \cL 5/3/7  \\
+    \cW 2/0/1  & \cW 1/2/0  & \cW 3/0/0  & \cT 1/1/1  & \cW 2/0/1  & \cW 9/3/3  \\
+    \cT 1/1/1  & \cT 0/3/0  & \cT 1/1/1  & \cL 0/2/1  & \cT 1/1/1  & \cL 3/8/4  \\
+  \hline
+    \cL 19/2/21  & \cW 6/36/0  & \cW 19/9/14  & \cW 21/9/12  & \cW 24/7/11  & \cW 89/63/58  \\
+  \hline
+  \end{tabular}
+\end{minipage}
+\end{table*}
+
+% ============================================================
+%  TABLE 2 --- F1 Score & G-mean  (EnergyPlus | LUCID)
+% ============================================================
+\begin{table*}[!ht]
+\centering
+\caption{Forecast-Driven vs.\ Raw CPD Matrix -- F1 Score \& G-mean}
+\label{tab:matrix-f1-gmean}
+\footnotesize
+\setlength{\tabcolsep}{1pt}
+\renewcommand{\arraystretch}{1}
+%
+\begin{minipage}[t]{0.42\linewidth}
+  \centering
+  \textbf{(a) EnergyPlus}\\[3pt]
+\begin{tabular}{|l|c|c|c|c|c|c|}
+  \hline
+   & Binseg & BU & Ker & PELT & Window & Total \\
+  \hline
+    ARIMA  & \cL 0/2/1  & \cW 2/1/0  & \cL 0/2/1  & \cW 1/2/0  & \cL 0/2/1  & \cT 3/9/3  \\
+    KNN  & \cL 0/0/3  & \cW 1/2/0  & \cL 0/0/3  & \cL 0/0/3  & \cL 0/0/3  & \cL 1/2/12  \\
+    KNN-MLP  & \cW 1/2/0  & \cW 2/1/0  & \cT 0/3/0  & \cW 1/2/0  & \cT 0/3/0  & \cW 4/11/0  \\
+    Lasso  & \cL 0/0/3  & \cL 0/2/1  & \cL 0/0/3  & \cL 0/0/3  & \cL 0/0/3  & \cL 0/2/13  \\
+    Lasso-MLP  & \cL 0/1/2  & \cL 0/2/1  & \cL 0/1/2  & \cL 0/1/2  & \cL 0/1/2  & \cL 0/6/9  \\
+    Lasso-XGB  & \cL 0/1/2  & \cL 0/2/1  & \cL 0/1/2  & \cL 0/1/2  & \cL 0/0/3  & \cL 0/5/10  \\
+    LR  & \cL 0/0/3  & \cL 0/2/1  & \cL 0/0/3  & \cL 0/0/3  & \cL 0/0/3  & \cL 0/2/13  \\
+    LR-XGB  & \cL 0/0/3  & \cL 0/2/1  & \cL 0/0/3  & \cL 0/0/3  & \cL 0/0/3  & \cL 0/2/13  \\
+    LSVR  & \cT 0/3/0  & \cT 0/3/0  & \cT 0/3/0  & \cT 0/3/0  & \cT 0/3/0  & \cT 0/15/0  \\
+    MLP  & \cL 0/2/1  & \cW 1/2/0  & \cL 0/2/1  & \cL 0/2/1  & \cL 0/2/1  & \cL 1/10/4  \\
+    SARIMAX  & \cL 0/2/1  & \cW 2/1/0  & \cL 0/2/1  & \cW 1/2/0  & \cL 0/2/1  & \cT 3/9/3  \\
+    SGD  & \cL 0/0/3  & \cL 0/2/1  & \cL 0/0/3  & \cL 0/0/3  & \cL 0/0/3  & \cL 0/2/13  \\
+    SVR  & \cL 1/0/2  & \cW 1/2/0  & \cT 1/1/1  & \cT 1/1/1  & \cL 0/2/1  & \cL 4/6/5  \\
+    XGB  & \cL 0/0/3  & \cL 0/2/1  & \cL 0/0/3  & \cL 0/0/3  & \cL 0/1/2  & \cL 0/3/12  \\
+  \hline
+    Total  & \cL 2/13/27  & \cW 9/26/7  & \cL 1/15/26  & \cL 4/14/24  & \cL 0/16/26  & \cL 16/84/110  \\
+  \hline
+  \end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\linewidth}
+  \centering
+  \textbf{(b) LUCID}\\[3pt]
+\begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  Binseg & BU & Ker & PELT & Window & Total \\
+  \hline
+    \cW 1/2/0  & \cT 0/3/0  & \cW 1/2/0  & \cW 1/2/0  & \cT 1/1/1  & \cW 4/10/1  \\
+    \cT 0/3/0  & \cT 0/3/0  & \cT 0/3/0  & \cT 0/3/0  & \cL 0/2/1  & \cL 0/14/1  \\
+    \cT 1/1/1  & \cT 0/3/0  & \cT 0/3/0  & \cL 0/2/1  & \cW 2/1/0  & \cW 3/10/2  \\
+    \cL 0/1/2  & \cL 0/2/1  & \cL 0/1/2  & \cL 0/2/1  & \cT 1/1/1  & \cL 1/7/7  \\
+    \cT 1/1/1  & \cT 0/3/0  & \cL 0/2/1  & \cL 0/2/1  & \cL 1/0/2  & \cL 2/8/5  \\
+    \cT 1/1/1  & \cT 0/3/0  & \cL 0/2/1  & \cL 0/2/1  & \cL 0/1/2  & \cL 1/9/5  \\
+    \cW 2/0/1  & \cT 0/3/0  & \cL 1/0/2  & \cW 2/0/1  & \cL 1/0/2  & \cT 6/3/6  \\
+    \cT 1/1/1  & \cT 0/3/0  & \cL 0/2/1  & \cT 1/1/1  & \cL 0/1/2  & \cL 2/8/5  \\
+    \cT 1/1/1  & \cW 1/2/0  & \cW 2/1/0  & \cW 2/1/0  & \cW 2/1/0  & \cW 8/6/1  \\
+    \cW 2/1/0  & \cL 0/2/1  & \cL 1/0/2  & \cW 2/1/0  & \cW 3/0/0  & \cW 8/4/3  \\
+    \cW 1/2/0  & \cT 0/3/0  & \cW 1/2/0  & \cW 1/2/0  & \cT 1/1/1  & \cW 4/10/1  \\
+    \cL 0/2/1  & \cT 0/3/0  & \cL 0/2/1  & \cT 1/1/1  & \cL 0/1/2  & \cL 1/9/5  \\
+    \cW 2/1/0  & \cW 1/2/0  & \cT 0/3/0  & \cW 1/2/0  & \cL 0/2/1  & \cW 4/10/1  \\
+    \cL 0/2/1  & \cT 0/3/0  & \cL 0/2/1  & \cL 0/2/1  & \cT 1/1/1  & \cL 1/10/4  \\
+  \hline
+    \cW 13/19/10  & \cT 2/38/2  & \cL 6/25/11  & \cW 11/23/8  & \cL 13/13/16  & \cL 45/118/47  \\
+  \hline
+  \end{tabular}
+\end{minipage}
+\end{table*}

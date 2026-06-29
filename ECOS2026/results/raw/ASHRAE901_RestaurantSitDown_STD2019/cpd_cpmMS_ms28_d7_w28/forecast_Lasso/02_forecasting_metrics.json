@@ -1,0 +1,27 @@
+{
+  "best_params": {
+    "trend_order": 2,
+    "selected_lags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      21,
+      22
+    ],
+    "fourier_order": 2,
+    "use_weekly": false,
+    "alpha": 1000.0
+  },
+  "metrics": {
+    "rmse": 274519417.56999296,
+    "mae": 202121962.599653,
+    "mape": 0.02864131049762368
+  },
+  "algorithm": "Lasso"
+}

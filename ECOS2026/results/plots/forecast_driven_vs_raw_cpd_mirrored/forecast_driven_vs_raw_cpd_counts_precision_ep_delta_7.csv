@@ -1,0 +1,15 @@
+forecast_algo,n_total,n_residual_better,n_raw_better,n_tie,n_missing
+ARIMA,39,4,2,33,0
+HybridKNNMLP,39,4,0,35,0
+HybridLRXGB,39,0,13,26,0
+HybridLassoMLP,39,0,9,30,0
+HybridLassoXGB,39,0,10,29,0
+KNN,39,2,11,26,0
+LR,39,0,13,26,0
+LSVR,39,0,0,39,0
+Lasso,39,0,13,26,0
+MLP,39,1,4,34,0
+SARIMAX,39,4,2,33,0
+SGD,39,0,13,26,0
+SVR,39,4,5,30,0
+XGB,39,0,12,27,0

@@ -1,0 +1,170 @@
+# ECOS2026 Configuration File
+# 
+# This file centralizes all parameters for the ECOS2026 pipeline.
+# Users can modify these values to customize the analysis without touching code.
+#
+# To run: python main.py --config CONFIG.yml [--dataset DATASET_NAME]
+
+# ============================================================================
+# DATA CONFIGURATION
+# ============================================================================
+data:
+  # Path to processed profiles (relative to repo root)
+  dataset_dir: "../datasets/processed/profiles"
+  
+  # Optional: EnergyPlus data for weather features
+  energyplus:
+    enabled: false
+    meter_dir: "../datasets/raw/EnergyPlus"      # Directory containing Meter.csv files
+    epw_dir: "../datasets/raw/EnergyPlus"         # Directory containing .epw files
+    # Example: for ASHRAE901_OfficeSmall, the files should be named:
+    #   - ASHRAE901_OfficeSmall_STD2019_MeterName.csv
+    #   - USA_CO_Denver-Aurora-Buckley.AFB.724695_TMY3.epw
+  
+  # Optional: LUCID data for weather features from Open-Meteo
+  lucid:
+    enabled: false
+    data_dir: "../datasets/raw/LUCID"
+    weather_file: "../datasets/raw/LUCID/open-meteo-50.58N5.57E241m-2022_2024.csv"
+
+# ============================================================================
+# OUTPUT CONFIGURATION
+# ============================================================================
+output:
+  # Results directory
+  base_dir: "results"
+  
+  # Create timestamped subdirectories
+  timestamp: true
+  
+  # Save intermediate results
+  save_intermediate: true
+
+# ============================================================================
+# STEP 1: CHANGE POINT DETECTION ON ORIGINAL DATA
+# ============================================================================
+step1_cpd_original:
+  enabled: true
+  
+  # CPD algorithms to use
+  algorithms:
+    - "BottomUp"
+    - "Pelt"
+    # Uncomment to add more:
+    # - "Binseg"
+    # - "Window"
+    # - "KernelCPD"
+    # - "CUSUM"
+    # - "EWMA"
+    # - "TwoSample"
+  
+  # CPD Parameters
+  min_segment: 28           # Minimum segment length (days)
+  delta_days: [1, 3, 7]     # Tolerance window for change point detection
+  window_days: 28           # Sliding window size
+  
+  # Whether to perform grid search on training data
+  grid_search: true
+
+# ============================================================================
+# STEP 2: FORECASTING
+# ============================================================================
+step2_forecasting:
+  enabled: true
+  
+  # Training/test split
+  train_years: 2            # Use first N years for training
+  forecast_year: 3          # Forecast year N
+  
+  # Feature Engineering Parameters
+  features:
+    # Lagged features (days to look back)
+    lags: [1, 2, 3, 4, 5, 6, 7, 28, 29, 30, 31]
+    
+    # Deterministic features (trend + seasonality + Fourier)
+    trend_order: [1, 2, 3, 4]            # Polynomial trend order (1=linear, 2=quadratic, 3=cubic)
+    fourier_order: [2, 3, 4]         # Fourier seasonality order (annual cycles)
+    polynomial_order: [1, 2, 3, 4]      # Max polynomial expansion (1=no powers, 2=squared, 3=cubed, etc.)
+  
+  # Models to train
+  models:
+    - "LinearRegression"
+    - "Lasso"
+    - "KNN"
+    - "SVR"
+    - "XGBoost"
+    - "MLP"
+    - "ARIMA"
+    - "SARIMAX"
+    - 'LSVR'
+    
+  
+  # Standardize features
+  standardize: true
+
+# ============================================================================
+# STEP 3: RESIDUAL ANALYSIS
+# ============================================================================
+step3_residuals:
+  enabled: true
+
+# ============================================================================
+# STEP 4: CHANGE POINT DETECTION ON RESIDUALS
+# ============================================================================
+step4_cpd_residuals:
+  enabled: true
+  
+  algorithms:
+    - "BottomUp"
+    - "Pelt"
+  
+  min_segment: 28
+  delta_days: [1, 3, 7]
+  window_days: 28
+
+# ============================================================================
+# STEP 5: CPD COMPARISON
+# ============================================================================
+step5_cpd_comparison:
+  enabled: true
+
+# ============================================================================
+# LOGGING AND DEBUGGING
+# ============================================================================
+logging:
+  level: "INFO"             # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  save_logs: true
+  log_dir: "logs"
+
+# ============================================================================
+# PERFORMANCE
+# ============================================================================
+performance:
+  # Number of parallel jobs (for local runs)
+  n_jobs: -1               # -1 = use all cores, 1 = single threaded
+  
+  # Verbose mode
+  verbose: true
+
+# ============================================================================
+# CLUSTER (SLURM) CONFIGURATION
+# ============================================================================
+slurm:
+  # Enable SLURM submission (auto-detect if running on cluster)
+  auto_detect: true
+  
+  # Email for notifications
+  email: "your-email@uclouvain.be"
+  
+  # Job resources
+  partition: "batch"
+  time: "02:00:00"
+  memory: "64G"
+  cpus: 1
+  
+  # Grid search over parameters (for cluster jobs)
+  # Each combination submitted as separate job
+  gridsearch:
+    trend_orders: [1, 2, 3, 4]       # Test multiple trend orders
+    fourier_orders: [2, 4, 6, 8, 10, 12]        # Uncomment to test multiple Fourier orders
+    polynomial_orders: [1, 2, 3, 4]     # Uncomment to test multiple polynomial orders

@@ -1,0 +1,28 @@
+{
+  "best_params": {
+    "trend_order": 1,
+    "selected_lags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      12,
+      13,
+      14,
+      15
+    ],
+    "fourier_order": 2,
+    "use_weekly": true,
+    "n_neighbors": 3
+  },
+  "metrics": {
+    "rmse": 218197113.41414014,
+    "mae": 132231035.33014464,
+    "mape": 0.5002715875005569
+  },
+  "algorithm": "KNN"
+}

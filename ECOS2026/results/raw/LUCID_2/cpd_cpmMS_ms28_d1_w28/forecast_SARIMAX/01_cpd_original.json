@@ -1,0 +1,36 @@
+{
+  "original_cpd": {
+    "cpmMS": {
+      "n_detected": 0,
+      "detected_cps": [],
+      "true_cps": [
+        "2024-06-07T00:00:00",
+        "2024-09-10T00:00:00"
+      ],
+      "n_true": 2,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "matched_points": {},
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "tn": 364,
+      "tp_rate": 0,
+      "fp_rate": 0,
+      "gmean": 0.0,
+      "covering": 0.1863597002000657,
+      "rand_index": 0.34727150235796095
+    }
+  },
+  "detected_cps": {
+    "cpmMS": []
+  },
+  "best_params": {
+    "cpmMS": {}
+  },
+  "true_cps": [
+    "2024-06-07T00:00:00",
+    "2024-09-10T00:00:00"
+  ]
+}

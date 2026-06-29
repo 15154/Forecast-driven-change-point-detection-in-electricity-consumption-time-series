@@ -1,0 +1,30 @@
+{
+  "best_params": {
+    "trend_order": 5,
+    "selected_lags": [
+      1,
+      3,
+      4,
+      6,
+      9,
+      10,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "fourier_order": 8,
+    "use_weekly": true,
+    "lasso_alpha": 0.1,
+    "xgb_depth": 7,
+    "xgb_n_estimators": 100,
+    "xgb_lr": 0.2
+  },
+  "metrics": {
+    "rmse": 34221.14231083539,
+    "mae": 27235.692731979027,
+    "mape": 4.090273786435428e+18
+  },
+  "algorithm": "HybridLassoXGB"
+}

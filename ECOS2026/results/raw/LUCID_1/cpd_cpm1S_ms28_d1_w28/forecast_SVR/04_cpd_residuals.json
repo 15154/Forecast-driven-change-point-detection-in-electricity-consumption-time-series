@@ -1,0 +1,36 @@
+{
+  "cpd_residuals": {
+    "n_detected": 0,
+    "detected_cps": [],
+    "true_cps": [
+      "2024-02-01T00:00:00",
+      "2024-05-01T00:00:00",
+      "2024-06-15T00:00:00"
+    ],
+    "n_true": 3,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3,
+    "matched_points": {},
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "tn": 363,
+    "tp_rate": 0,
+    "fp_rate": 0,
+    "gmean": 0.0,
+    "covering": 0.007173997431992594,
+    "rand_index": 0.3796691369114455
+  },
+  "detected_cps": {
+    "cpm1S": []
+  },
+  "cpd_params": {
+    "cpm1S": {}
+  },
+  "true_cps": [
+    "2024-02-01T00:00:00",
+    "2024-05-01T00:00:00",
+    "2024-06-15T00:00:00"
+  ]
+}

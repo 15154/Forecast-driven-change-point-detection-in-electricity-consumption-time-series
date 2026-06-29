@@ -1,0 +1,15 @@
+scope,rank_by,rank_mode,n_total_combinations,n_valid_comparisons,n_missing,n_residual_better,n_raw_better,n_tie,residual_win_rate
+GLOBAL,recall,max,3276,3276,0,91,413,2772,0.027777777777777776
+CPD_ALGO::Binseg,recall,max,252,252,0,14,104,134,0.05555555555555555
+CPD_ALGO::BottomUp,recall,max,252,252,0,12,27,213,0.047619047619047616
+CPD_ALGO::CUSUM,recall,max,252,252,0,0,0,252,0.0
+CPD_ALGO::EWMA,recall,max,252,252,0,0,0,252,0.0
+CPD_ALGO::KernelCPD,recall,max,252,252,0,21,87,144,0.08333333333333333
+CPD_ALGO::Pelt,recall,max,252,252,0,24,103,125,0.09523809523809523
+CPD_ALGO::TwoSample,recall,max,252,252,0,0,0,252,0.0
+CPD_ALGO::Window,recall,max,252,252,0,20,92,140,0.07936507936507936
+CPD_ALGO::cpm1B,recall,max,252,252,0,0,0,252,0.0
+CPD_ALGO::cpm1S,recall,max,252,252,0,0,0,252,0.0
+CPD_ALGO::cpmMS,recall,max,252,252,0,0,0,252,0.0
+CPD_ALGO::sbs,recall,max,252,252,0,0,0,252,0.0
+CPD_ALGO::wbs,recall,max,252,252,0,0,0,252,0.0

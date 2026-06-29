@@ -1,0 +1,41 @@
+{
+  "algorithm": "BottomUp",
+  "cpd_params": {
+    "model": "rbf",
+    "min_size": 28,
+    "jump": 1,
+    "pen": 10.0
+  },
+  "original": {
+    "n_detected": 2,
+    "n_true": 3,
+    "tp": 1,
+    "tn": 361,
+    "fp": 1,
+    "fn": 2,
+    "tp_rate": 0.3333333333333333,
+    "fp_rate": 0.0027624309392265192,
+    "precision": 0.5,
+    "recall": 0.3333333333333333,
+    "f1_score": 0.4,
+    "gmean": 0.5765522725826843,
+    "covering": 0.5208607949525162,
+    "rand_index": 0.9137287370164082
+  },
+  "residuals": {
+    "n_detected": 4,
+    "n_true": 3,
+    "tp": 0,
+    "tn": 358,
+    "fp": 4,
+    "fn": 3,
+    "tp_rate": 0,
+    "fp_rate": 0.011049723756906077,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "gmean": 0.0,
+    "covering": 0.5498399646614334,
+    "rand_index": 0.7854734306789102
+  }
+}

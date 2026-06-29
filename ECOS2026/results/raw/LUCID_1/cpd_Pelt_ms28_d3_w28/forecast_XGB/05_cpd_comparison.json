@@ -1,0 +1,41 @@
+{
+  "algorithm": "Pelt",
+  "cpd_params": {
+    "model": "l1",
+    "min_size": 28,
+    "jump": 1,
+    "pen": 3.0807751387916715
+  },
+  "original": {
+    "n_detected": 10,
+    "n_true": 3,
+    "tp": 2,
+    "tn": 355,
+    "fp": 8,
+    "fn": 1,
+    "tp_rate": 0.6666666666666666,
+    "fp_rate": 0.02203856749311295,
+    "precision": 0.2,
+    "recall": 0.6666666666666666,
+    "f1_score": 0.30769230769230765,
+    "gmean": 0.8074492481499532,
+    "covering": 0.3915366649039309,
+    "rand_index": 0.6999775432292836
+  },
+  "residuals": {
+    "n_detected": 9,
+    "n_true": 3,
+    "tp": 0,
+    "tn": 354,
+    "fp": 9,
+    "fn": 3,
+    "tp_rate": 0,
+    "fp_rate": 0.024793388429752067,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "gmean": 0.0,
+    "covering": 0.3006206440012604,
+    "rand_index": 0.6776704843176885
+  }
+}

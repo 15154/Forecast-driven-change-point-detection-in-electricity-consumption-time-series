@@ -1,0 +1,6 @@
+cpd_algo,n_total,n_residual_better,n_raw_better,n_tie,n_missing
+Binseg,42,4,18,20,0
+BottomUp,42,16,13,13,0
+KernelCPD,42,1,25,16,0
+Pelt,42,4,23,15,0
+Window,42,4,17,21,0

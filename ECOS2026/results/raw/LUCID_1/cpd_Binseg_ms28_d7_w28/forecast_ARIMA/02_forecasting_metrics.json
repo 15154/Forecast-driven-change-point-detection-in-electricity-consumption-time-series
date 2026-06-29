@@ -1,0 +1,26 @@
+{
+  "best_params": {
+    "trend_order": 5,
+    "selected_lags": [
+      1,
+      3,
+      4,
+      6,
+      9,
+      10,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "fourier_order": 8,
+    "use_weekly": true
+  },
+  "metrics": {
+    "rmse": 2917872.5925184037,
+    "mae": 2093807.3565109244,
+    "mape": 2.4419187451461422e+20
+  },
+  "algorithm": "ARIMA"
+}

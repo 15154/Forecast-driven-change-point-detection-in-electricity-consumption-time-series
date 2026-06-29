@@ -1,0 +1,19 @@
+{
+  "best_params": {
+    "trend_order": 5,
+    "selected_lags": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fourier_order": 8,
+    "use_weekly": false
+  },
+  "metrics": {
+    "rmse": 13346981981.344906,
+    "mae": 9539081421.160736,
+    "mape": 24.40335106506051
+  },
+  "algorithm": "SARIMAX"
+}

@@ -1,0 +1,27 @@
+{
+  "dataset": "ASHRAE901_OfficeSmall_STD2019",
+  "cpd_algo": "wbs",
+  "min_segment": 28,
+  "delta": 1,
+  "window_days": 28,
+  "forecast_algo": "LR",
+  "best_combination": {
+    "trend_order": 1,
+    "selected_lags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      12,
+      13,
+      14,
+      15
+    ],
+    "fourier_order": 2,
+    "use_weekly": true
+  }
+}

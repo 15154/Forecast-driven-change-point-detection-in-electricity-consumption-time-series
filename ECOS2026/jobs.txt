@@ -1,0 +1,10 @@
+bash ECOS2026/slurm_ecos2026_loop.sh ASHRAE901_RestaurantSitDown_STD2019 Window mathias.deschietere@uclouvain.be
+bash ECOS2026/slurm_ecos2026_loop.sh ASHRAE901_RestaurantSitDown_STD2019 KernelCPD mathias.deschietere@uclouvain.be
+bash ECOS2026/slurm_ecos2026_loop.sh ASHRAE901_RestaurantSitDown_STD2019 CUSUM mathias.deschietere@uclouvain.be
+bash ECOS2026/slurm_ecos2026_loop.sh ASHRAE901_RestaurantSitDown_STD2019 EWMA mathias.deschietere@uclouvain.be
+bash ECOS2026/slurm_ecos2026_loop.sh ASHRAE901_RestaurantSitDown_STD2019 TwoSample mathias.deschietere@uclouvain.be
+bash ECOS2026/slurm_ecos2026_loop.sh ASHRAE901_RestaurantSitDown_STD2019 cpm1B mathias.deschietere@uclouvain.be
+bash ECOS2026/slurm_ecos2026_loop.sh ASHRAE901_RestaurantSitDown_STD2019 cpm1S mathias.deschietere@uclouvain.be
+bash ECOS2026/slurm_ecos2026_loop.sh ASHRAE901_RestaurantSitDown_STD2019 cpmMS mathias.deschietere@uclouvain.be
+bash ECOS2026/slurm_ecos2026_loop.sh ASHRAE901_RestaurantSitDown_STD2019 sbs mathias.deschietere@uclouvain.be
+bash ECOS2026/slurm_ecos2026_loop.sh ASHRAE901_RestaurantSitDown_STD2019 wbs mathias.deschietere@uclouvain.be

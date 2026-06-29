@@ -1,0 +1,15 @@
+scope,rank_by,rank_mode,n_total_combinations,n_valid_comparisons,n_missing,n_residual_better,n_raw_better,n_tie,residual_win_rate
+GLOBAL,f1_score,max,3276,3276,0,158,494,2624,0.04822954822954823
+CPD_ALGO::Binseg,f1_score,max,252,252,0,30,121,101,0.11904761904761904
+CPD_ALGO::BottomUp,f1_score,max,252,252,0,33,27,192,0.13095238095238096
+CPD_ALGO::CUSUM,f1_score,max,252,252,0,0,0,252,0.0
+CPD_ALGO::EWMA,f1_score,max,252,252,0,0,0,252,0.0
+CPD_ALGO::KernelCPD,f1_score,max,252,252,0,30,116,106,0.11904761904761904
+CPD_ALGO::Pelt,f1_score,max,252,252,0,38,110,104,0.15079365079365079
+CPD_ALGO::TwoSample,f1_score,max,252,252,0,0,0,252,0.0
+CPD_ALGO::Window,f1_score,max,252,252,0,27,120,105,0.10714285714285714
+CPD_ALGO::cpm1B,f1_score,max,252,252,0,0,0,252,0.0
+CPD_ALGO::cpm1S,f1_score,max,252,252,0,0,0,252,0.0
+CPD_ALGO::cpmMS,f1_score,max,252,252,0,0,0,252,0.0
+CPD_ALGO::sbs,f1_score,max,252,252,0,0,0,252,0.0
+CPD_ALGO::wbs,f1_score,max,252,252,0,0,0,252,0.0

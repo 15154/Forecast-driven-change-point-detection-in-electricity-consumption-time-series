@@ -1,0 +1,21 @@
+{
+  "best_params": {
+    "trend_order": 5,
+    "selected_lags": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fourier_order": 8,
+    "use_weekly": false,
+    "learning_rate": "invscaling",
+    "eta0": 0.001
+  },
+  "metrics": {
+    "rmse": 107349734.54160805,
+    "mae": 66368870.15794594,
+    "mape": 0.2240793580928739
+  },
+  "algorithm": "SGD"
+}

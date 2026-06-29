@@ -1,0 +1,20 @@
+{
+  "dataset": "ASHRAE901_ApartmentMidRise_STD2019",
+  "cpd_algo": "cpm1B",
+  "min_segment": 28,
+  "delta": 3,
+  "window_days": 28,
+  "forecast_algo": "KNN",
+  "best_combination": {
+    "trend_order": 5,
+    "selected_lags": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fourier_order": 8,
+    "use_weekly": false,
+    "n_neighbors": 3
+  }
+}

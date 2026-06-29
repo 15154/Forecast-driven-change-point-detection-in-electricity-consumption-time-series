@@ -1,0 +1,14 @@
+cpd_algo,n_total,n_residual_better,n_raw_better,n_tie,n_missing
+Binseg,42,17,18,7,0
+BottomUp,42,11,25,6,0
+CUSUM,42,0,0,42,0
+EWMA,42,0,0,42,0
+KernelCPD,42,11,22,9,0
+Pelt,42,17,19,6,0
+TwoSample,42,0,0,42,0
+Window,42,18,10,14,0
+cpm1B,42,0,0,42,0
+cpm1S,42,0,0,42,0
+cpmMS,42,0,0,42,0
+sbs,42,0,0,42,0
+wbs,42,0,0,42,0

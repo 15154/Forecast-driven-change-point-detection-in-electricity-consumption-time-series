@@ -1,0 +1,30 @@
+{
+  "best_params": {
+    "trend_order": 1,
+    "selected_lags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      12,
+      13,
+      14,
+      15
+    ],
+    "fourier_order": 2,
+    "use_weekly": true,
+    "xgb_depth": 5,
+    "xgb_n_estimators": 200,
+    "xgb_lr": 0.1
+  },
+  "metrics": {
+    "rmse": 598177771.5467824,
+    "mae": 504039985.2138625,
+    "mape": 2.0531808142120154
+  },
+  "algorithm": "HybridLRXGB"
+}

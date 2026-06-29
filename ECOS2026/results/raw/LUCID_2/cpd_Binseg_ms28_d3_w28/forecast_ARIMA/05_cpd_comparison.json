@@ -1,0 +1,41 @@
+{
+  "algorithm": "Binseg",
+  "cpd_params": {
+    "model": "rbf",
+    "min_size": 28,
+    "jump": 1,
+    "pen": 3.0807751387916715
+  },
+  "original": {
+    "n_detected": 1,
+    "n_true": 2,
+    "tp": 0,
+    "tn": 363,
+    "fp": 1,
+    "fn": 2,
+    "tp_rate": 0,
+    "fp_rate": 0.0027472527472527475,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "gmean": 0.0,
+    "covering": 0.21722181615676447,
+    "rand_index": 0.4967437682461262
+  },
+  "residuals": {
+    "n_detected": 7,
+    "n_true": 2,
+    "tp": 1,
+    "tn": 358,
+    "fp": 6,
+    "fn": 1,
+    "tp_rate": 0.5,
+    "fp_rate": 0.016483516483516484,
+    "precision": 0.14285714285714285,
+    "recall": 0.5,
+    "f1_score": 0.22222222222222224,
+    "gmean": 0.701254762378297,
+    "covering": 0.46174863387978143,
+    "rand_index": 0.7810315143349053
+  }
+}

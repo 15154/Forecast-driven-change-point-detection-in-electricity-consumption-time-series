@@ -1,0 +1,15 @@
+scope,rank_by,rank_mode,n_total_combinations,n_valid_comparisons,n_missing,n_residual_better,n_raw_better,n_tie,residual_win_rate
+GLOBAL,rand_index,max,3276,3276,0,339,632,2305,0.10347985347985347
+CPD_ALGO::Binseg,rand_index,max,252,252,0,69,160,23,0.27380952380952384
+CPD_ALGO::BottomUp,rand_index,max,252,252,0,45,81,126,0.17857142857142858
+CPD_ALGO::CUSUM,rand_index,max,252,252,0,0,0,252,0.0
+CPD_ALGO::EWMA,rand_index,max,252,252,0,0,0,252,0.0
+CPD_ALGO::KernelCPD,rand_index,max,252,252,0,67,143,42,0.26587301587301587
+CPD_ALGO::Pelt,rand_index,max,252,252,0,73,135,44,0.2896825396825397
+CPD_ALGO::TwoSample,rand_index,max,252,252,0,0,0,252,0.0
+CPD_ALGO::Window,rand_index,max,252,252,0,85,113,54,0.3373015873015873
+CPD_ALGO::cpm1B,rand_index,max,252,252,0,0,0,252,0.0
+CPD_ALGO::cpm1S,rand_index,max,252,252,0,0,0,252,0.0
+CPD_ALGO::cpmMS,rand_index,max,252,252,0,0,0,252,0.0
+CPD_ALGO::sbs,rand_index,max,252,252,0,0,0,252,0.0
+CPD_ALGO::wbs,rand_index,max,252,252,0,0,0,252,0.0

@@ -1,0 +1,41 @@
+{
+  "best_params": {
+    "trend_order": 3,
+    "selected_lags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      17,
+      19,
+      20,
+      22,
+      24,
+      26,
+      28
+    ],
+    "fourier_order": 6,
+    "use_weekly": true,
+    "knn_neighbors": 5,
+    "mlp_hidden": [
+      64,
+      32,
+      128,
+      64
+    ],
+    "mlp_lr": 0.01
+  },
+  "metrics": {
+    "rmse": 18.109047907736517,
+    "mae": 2.5150890013139686,
+    "mape": 0.22586620256674017
+  },
+  "algorithm": "HybridKNNMLP"
+}

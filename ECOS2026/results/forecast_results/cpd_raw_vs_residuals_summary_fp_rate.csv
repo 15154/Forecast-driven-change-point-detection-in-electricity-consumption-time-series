@@ -1,0 +1,15 @@
+scope,rank_by,rank_mode,n_total_combinations,n_valid_comparisons,n_missing,n_residual_better,n_raw_better,n_tie,residual_win_rate
+GLOBAL,fp_rate,min,3276,3276,0,182,546,2548,0.05555555555555555
+CPD_ALGO::Binseg,fp_rate,min,252,252,0,35,118,99,0.1388888888888889
+CPD_ALGO::BottomUp,fp_rate,min,252,252,0,60,39,153,0.23809523809523808
+CPD_ALGO::CUSUM,fp_rate,min,252,252,0,0,0,252,0.0
+CPD_ALGO::EWMA,fp_rate,min,252,252,0,0,0,252,0.0
+CPD_ALGO::KernelCPD,fp_rate,min,252,252,0,25,144,83,0.0992063492063492
+CPD_ALGO::Pelt,fp_rate,min,252,252,0,26,126,100,0.10317460317460317
+CPD_ALGO::TwoSample,fp_rate,min,252,252,0,0,0,252,0.0
+CPD_ALGO::Window,fp_rate,min,252,252,0,36,119,97,0.14285714285714285
+CPD_ALGO::cpm1B,fp_rate,min,252,252,0,0,0,252,0.0
+CPD_ALGO::cpm1S,fp_rate,min,252,252,0,0,0,252,0.0
+CPD_ALGO::cpmMS,fp_rate,min,252,252,0,0,0,252,0.0
+CPD_ALGO::sbs,fp_rate,min,252,252,0,0,0,252,0.0
+CPD_ALGO::wbs,fp_rate,min,252,252,0,0,0,252,0.0

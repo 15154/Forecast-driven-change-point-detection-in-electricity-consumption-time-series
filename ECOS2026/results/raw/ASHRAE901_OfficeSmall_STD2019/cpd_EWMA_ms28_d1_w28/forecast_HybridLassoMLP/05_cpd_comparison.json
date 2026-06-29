@@ -1,0 +1,36 @@
+{
+  "algorithm": "EWMA",
+  "cpd_params": {},
+  "original": {
+    "n_detected": 0,
+    "n_true": 4,
+    "tp": 0,
+    "tn": 361,
+    "fp": 0,
+    "fn": 4,
+    "tp_rate": 0,
+    "fp_rate": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "gmean": 0.0,
+    "covering": 0.10808782135485082,
+    "rand_index": 0.260138491645341
+  },
+  "residuals": {
+    "n_detected": 0,
+    "n_true": 4,
+    "tp": 0,
+    "tn": 361,
+    "fp": 0,
+    "fn": 4,
+    "tp_rate": 0,
+    "fp_rate": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "gmean": 0.0,
+    "covering": 0.10808782135485082,
+    "rand_index": 0.260138491645341
+  }
+}

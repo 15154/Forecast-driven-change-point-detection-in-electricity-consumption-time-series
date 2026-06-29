@@ -1,0 +1,21 @@
+{
+  "best_params": {
+    "trend_order": 5,
+    "selected_lags": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fourier_order": 8,
+    "use_weekly": false,
+    "kernel": "linear",
+    "C": 0.1
+  },
+  "metrics": {
+    "rmse": 174045038.76088694,
+    "mae": 130586102.2954372,
+    "mape": 0.3739258025488811
+  },
+  "algorithm": "SVR"
+}

@@ -1,0 +1,22 @@
+{
+  "best_params": {
+    "trend_order": 5,
+    "selected_lags": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fourier_order": 8,
+    "use_weekly": false,
+    "max_depth": 2,
+    "n_estimators": 50,
+    "learning_rate": 0.5
+  },
+  "metrics": {
+    "rmse": 127273799.45657744,
+    "mae": 77568127.43125954,
+    "mape": 0.3350207907622534
+  },
+  "algorithm": "XGB"
+}

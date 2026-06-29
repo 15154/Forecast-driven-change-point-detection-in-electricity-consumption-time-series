@@ -1,0 +1,29 @@
+{
+  "dataset": "ASHRAE901_ApartmentMidRise_STD2019",
+  "cpd_algo": "KernelCPD",
+  "min_segment": 28,
+  "delta": 7,
+  "window_days": 28,
+  "forecast_algo": "MLP",
+  "best_combination": {
+    "trend_order": 5,
+    "selected_lags": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fourier_order": 8,
+    "use_weekly": false,
+    "hidden_layer_sizes": [
+      100,
+      100,
+      50,
+      100,
+      50,
+      25,
+      200,
+      100
+    ]
+  }
+}

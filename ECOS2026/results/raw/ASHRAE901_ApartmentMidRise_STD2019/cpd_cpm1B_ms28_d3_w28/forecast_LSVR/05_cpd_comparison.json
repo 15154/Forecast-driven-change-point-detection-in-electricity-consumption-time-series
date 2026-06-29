@@ -1,0 +1,36 @@
+{
+  "algorithm": "cpm1B",
+  "cpd_params": {},
+  "original": {
+    "n_detected": 0,
+    "n_true": 3,
+    "tp": 0,
+    "tn": 362,
+    "fp": 0,
+    "fn": 3,
+    "tp_rate": 0,
+    "fp_rate": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "gmean": 0.0,
+    "covering": 0.24590729968099084,
+    "rand_index": 0.37032967032967035
+  },
+  "residuals": {
+    "n_detected": 0,
+    "n_true": 3,
+    "tp": 0,
+    "tn": 362,
+    "fp": 0,
+    "fn": 3,
+    "tp_rate": 0,
+    "fp_rate": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "gmean": 0.0,
+    "covering": 0.24590729968099084,
+    "rand_index": 0.37032967032967035
+  }
+}

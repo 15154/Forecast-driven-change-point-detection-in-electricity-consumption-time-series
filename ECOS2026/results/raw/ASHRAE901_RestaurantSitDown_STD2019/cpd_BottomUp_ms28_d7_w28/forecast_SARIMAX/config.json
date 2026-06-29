@@ -1,0 +1,26 @@
+{
+  "dataset": "ASHRAE901_RestaurantSitDown_STD2019",
+  "cpd_algo": "BottomUp",
+  "min_segment": 28,
+  "delta": 7,
+  "window_days": 28,
+  "forecast_algo": "SARIMAX",
+  "best_combination": {
+    "trend_order": 2,
+    "selected_lags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      21,
+      22
+    ],
+    "fourier_order": 2,
+    "use_weekly": false
+  }
+}
